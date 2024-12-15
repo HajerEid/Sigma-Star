@@ -1,0 +1,379 @@
+body{
+    font-family: "Open Sans", sans-serif;
+}
+/*header*/
+header .navbar{
+    z-index: 100;
+    box-shadow: 0px 2px 20px #2c64632c;
+}
+header .navbar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .navbar-brand {
+    font-size: 40px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #5f687b;
+}
+header .navbar-brand span:first-child {
+    color: #f38300;
+}
+
+header .navbar-brand span:last-child {
+    color: #03b0db;
+} 
+.navbar-collapse {
+    flex-grow: 0;
+    list-style: none;
+    justify-content: space-between;
+    gap: 20px;
+}
+.navbar-collapse li{
+    padding: 5px;
+}
+.navbar-collapse .nav-item:hover a{
+    color: #01b8dc;
+}
+.navbar-collapse button{
+    padding: 5px 40px;
+}
+
+
+/*hero*/
+#hero .container{
+    padding: 20px;
+    margin: auto;
+    
+}
+#hero h1{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 50px;
+    color: #3e4450;
+}
+#hero p{
+    color: #858ea1;
+    font-size: 20px;
+
+}
+#hero .body {
+    width: 80%;
+    font-family: Raleway, sans-serif;
+    text-align: start;
+    font-size: 24px;
+    
+}
+#hero .body .start{
+    padding:10px 30px;
+    border-radius: 5px;
+    color: #fff;
+    background: #01b8dc;
+    box-shadow: 0 5px 30px rgba(22, 223, 126, 0.45);
+}
+#hero .body .start:hover{
+    background-color:#f38300 ;
+}
+#hero .logo{
+    display: flex;
+    justify-content: center;
+    /* Centers the image horizontally */
+}
+#hero .animated-img {
+    animation: float 4s ease-in-out infinite;
+   max-width: 110%;
+}
+
+/* Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*about*/
+
+#about .container.top{
+    margin: auto;
+}
+#about .card.box{
+    padding: 20px;
+    color: #5f687b;
+    background: #f9f9fa;
+    border-radius: 5px;
+    border: 1px solid #f9f9fa;
+    transition:all 0.3s;
+    
+}
+#about .card .card-body{
+    text-align: right ;
+}
+#about .card h5{
+    font-family: 'Raleway', sans-serif;
+    margin: 20px 0;
+}
+#about .card:hover h5{
+color: #01b8dc;
+}
+#about .card i {
+    text-align: center;
+    color: #01b8dc;
+    font-size: 36px;
+}
+#about .aboutus{
+    margin:50px auto;
+}
+#about .aboutus img{
+margin-top: 50px;
+ max-width: 100%;
+}
+#about .text h5 {
+    font-family: 'Raleway',sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #5f687b;
+    margin-bottom: 20px;
+}
+#about .text p{
+    font-size: 15px;
+}
+
+/*Services*/ /*clint*/
+#Services ,#clint {
+    background-color: #f9f9fa;
+}
+#Services .head ,
+#clint  .head,
+#Contact .head{
+    padding: 30px 0;
+}
+
+#Services .head h3 ,
+#clint .head h3,
+#Contact .head h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #5f687b;
+    text-shadow: 5px -15px 2px #5f687b3f;
+}
+#Services .container-fluid{
+    margin: auto;
+    padding: 20px;
+    
+}
+#Services .card{
+    text-align: center;
+    border: 1px solid #fff;
+   padding: 20px;
+    transition: all ease-in-out .3s;
+    background: #fff;
+    transition:all 0.3s;
+}
+#Services .card i{
+color: #01b8dc;
+line-height: 1.5;
+
+}
+#Services .card p{
+    font-weight: bold;
+    font-size: 20px;
+    color: #5f687b;
+}
+#Services .card:hover p{
+    color: #01b8dc;
+}
+/*Contact*/
+#Contact .container-fluid{
+    margin: auto;
+}
+#Contact .loc ,#Contact .form{
+    border-top: 5px solid #01b8dc;
+    padding: 20px;
+    margin: 30px;
+    background: #f9f9fa;
+    border-bottom: 5px solid #01b8dc;
+}
+#Contact .loc .icons{
+    width: 100%;
+
+    margin-bottom: 30px;
+    font-size: 12px;
+    color: #949cac;
+
+}
+#Contact .loc .icons h5{
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #5f687b;
+}
+#Contact .loc .icons .icon i {
+    font-size: 20px;
+    color: #01b8dc;
+    width: 44px;
+    height: 44px;
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+#Contact .loc .icons .icon:hover i{
+background: #01b8dc;
+ color: #fff;
+}
+#Contact form {
+    height: fit-content;
+    transition: all 0.3s ease-in-out;
+}
+#Contact form input{
+    padding: 10px;
+}
+#Contact form input:focus,
+#Contact form textarea:focus {
+    border-color: #01b8dc;
+    box-shadow: 0 0 5px rgba(1, 184, 220, 0.8);
+    outline: none;
+   
+}
+#Contact form button{
+    margin: 20px;
+    padding: 5px 20px;
+    color: #fff;
+}
+/*footer*/
+footer{
+    background-color: #f3f4f6;
+    color: #5f687b;
+    height: fit-content;
+    
+}
+footer .social-media{
+    margin: auto;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .social-media  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+   
+    font-family: 'Poppins', sans-serif;  
+}
+footer .social-media .social-icons{
+    margin: 30px;
+    
+}
+footer .social-media .social-icons li{
+    font-size: 18px;
+    background: #eaecef;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s;
+}
+footer .social-media .social-icons li a{
+    color: #5f687b;
+    transition:all 0.3s;
+}
+footer .social-media .social-icons li:hover {
+    background-color: #01b8dc;
+   
+}
+footer .social-media .social-icons li:hover a{
+ color: #f3f4f6;
+}
+footer #copyright .container{
+    border-top: 1px solid #d9dce2;
+    padding: 20px;
+}
+footer #copyright  a{
+    text-decoration: none;
+    color: #01b8dc;
+}
+footer #copyright a:hover{
+    color: rgba(22, 223, 126, 0.45);
+}
+
+/* Responsive  */
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    /*header*/
+    .navbar-nav{
+        flex-direction: column-reverse;
+        }
+    /*hero*/
+    #hero .body {
+        text-align: center;
+        width: 100%;
+    }
+    #hero .row {
+        flex-direction: column-reverse;
+    }
+    #hero h1 {
+       font-size: 3.5rem;
+       margin-bottom: 20px;
+    }
+    #hero .body .start{
+        margin: 20px 0;
+        width: 100%;
+    }
+    #hero .animated-img{
+        width: 100%;
+    }
+    /*about*/
+    #about .container {
+        flex-direction: column;
+    }
+    #about .card.box {
+        width: fit-content;
+        margin: 10px;
+    }
+    #Services .head,
+    #clint .head,
+    #Contact .head {
+        padding: 30px;
+    }
+    /*Contact*/
+    #Contact .loc,
+    #Contact .form {
+        padding: 10px;
+        margin: 10px;
+        width: fit-content;
+    }
+    #Contact .form .container{
+        box-sizing: content-box;
+    }
+    #Contact .form button{
+        margin: 20px 0 0 0;
+        width: 90%;
+    }
+ 
+    /*footer*/
+    footer #copyright .container {
+        flex-direction: column;
+        padding:10px 0;
+        text-align: center;
+        
+    }
+
+}
