@@ -168,6 +168,10 @@ margin-top: 50px;
     color: #5f687b;
     text-shadow: 5px -15px 2px #5f687b3f;
 }
+#clint p{
+    margin: auto;
+    padding: 20px 100px;
+}
 #Services .container-fluid{
     margin: auto;
     padding: 20px;
